@@ -1,0 +1,355 @@
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Colors */
+    --color-primary-pink: hsl(322, 100%, 66%);
+    --color-primary-light-pink: hsl(321, 100%, 78%);
+    --color-primary-light-red: hsl(0, 100%, 63%);
+
+    --color-neutral-very-dark-cyan: hsl(192, 100%, 9%);
+    --color-neutral-very-pale-blue: hsl(207, 100%, 98%);
+
+    /* Typography */
+    --font-family-headings: 'Poppins', sans-serif;
+    --font-weight-headings: 700;
+
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-weight-body-regular: 400;
+    --font-weight-body-semibold: 600;
+    --font-weight-body-bold: 700;
+
+    /* Font Sizes */
+    --font-size-body: 15px;
+
+    /* Icons */
+    --icon-font-awesome: 'Font Awesome';
+    --icon-icomoon: 'IcoMoon';
+    --icon-ionicons: 'Ionicons';
+
+    /* Padding */
+    --padding: 0.5rem;
+    --padding-1: 1rem;
+    --padding-2: 1.5rem;
+    --padding-3: 2rem;
+    --padding-4: 4rem;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-neutral-very-pale-blue);
+    overflow-x: hidden; 
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Center the content vertically and horizontally */
+    max-width: var(--desktop-width);
+    margin: 0 auto; /* Center the body content horizontally */
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    background-color: var(--color-neutral-very-dark-cyan);
+    padding: var(--padding-4);
+    width: 100%;
+}
+
+a {
+    color: var(--color-neutral-very-pale-blue);
+}
+
+/* TOP-OF-PAGE */
+.top-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between flex items */
+    align-items: center; /* Align items vertically centered */
+    padding: var(--padding-2);
+    width: 100%; /* Ensure it takes full width for space between to work */
+    max-width: var(--desktop-width);
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50px; /* Adjust as needed */
+    margin-right: var(--padding); /* Space between logo and text */
+    
+}
+
+.text-overlay {
+    font-weight: var(--font-weight-body-bold);
+    font-size: 1.5rem; /* Adjust as needed */
+    color: var(--color-neutral-very-dark-cyan);
+}
+
+.tryitfree-btn {
+    background-color: var(--color-primary-pink);
+    color: white;
+    padding: 0.5rem 1rem; /* Adjust as needed */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* HERO-SECTION */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-4);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--desktop-width);
+    box-sizing: border-box;
+    margin: var(--padding-4) auto; /* Ensure it’s centered horizontally and has space at the top and bottom */
+}
+.hero-btn {
+    background-color: var(--color-primary-pink);
+    color: white;
+    padding: var(--padding);
+    border-radius: 25px; /* Large value for rounded edges */
+    width: 20%; /* Fixed width, adjust as needed */
+    height: 50px; /* Fixed height, adjust as needed */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.big-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* STATS-SECTION */
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: var(--padding-2);
+}
+
+.stat-highlight {
+    font-size: 2rem;
+    font-weight: var(--font-weight-body-bold);
+}
+
+/* GROW-TOGETHER-SECTION */
+.growtogether-container {
+    color: var(--color-neutral-very-dark-cyan) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: var(--desktop-width);
+    padding: var(--padding-4);
+}
+
+.growtogether-highlight {
+    color: var(--color-neutral-very-dark-cyan);
+}
+
+.growtogether-info {
+    width: 50%;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    text-wrap: wrap;
+    align-items: left;
+    text-align: left;
+    padding: var(--padding-1);
+}
+
+.ontop-image {
+    z-index: 1;
+}
+
+/* FLOWING-CONVERSATIONS-SECTION */
+.flowingconversations-container {
+    color: var(--color-neutral-very-dark-cyan) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: var(--desktop-width);
+    padding: var(--padding-4);
+}
+
+/* YOUR-USERS-SECTION */
+.yourusers-container {
+    color: var(--color-neutral-very-dark-cyan) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: var(--desktop-width);
+    padding: var(--padding-4);
+}
+
+.yourusers-highlight {
+    color: var(--color-primary-pink);
+}
+
+.yourusers-info {
+    width: 50%;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    text-wrap: wrap;
+    align-items: left;
+    text-align: left;
+    padding: var(--padding-1);
+}
+
+.ontop-image {
+    z-index: 1;
+}
+
+/* BUILD YOUR COMMUNITY */
+.buildyourcommunity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-4);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--desktop-width);
+    box-sizing: border-box;
+    margin: var(--padding-4) auto; /* Ensure it’s centered horizontally and has space at the top and bottom */
+}
+
+
+/* FOOTER */
+.footer-content {
+display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: var(--desktop-width);
+  margin: 0 auto; /* Center the footer content horizontally */
+  padding: var(--padding-2);
+}
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%; /* Adjust width as needed */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--padding-1);
+  }
+  
+  .logo {
+    max-width: 50px; /* Adjust as needed */
+    margin-right: var(--padding-1); /* Space between logo and text */
+  }
+  
+  .text-overlay {
+    font-weight: var(--font-weight-body-bold);
+    font-size: 1.5rem; /* Adjust as needed */
+    color: var(--color-neutral-very-dark-cyan); /* Ensure the text is visible */
+  }
+  
+  .contact-info {
+    color: white;
+    margin-bottom: var(--padding-2);
+  }
+  
+  .contact-info p {
+    margin: 0 0 var(--padding-1) 0;
+  }
+  
+  .contact-info a {
+    color: var(--color-neutral-very-pale-blue);
+    text-decoration: none;
+    margin-left: var(--padding-1); /* Space between icon and text */
+  }
+  
+  .social-media-icons {
+    padding-top: var(--padding-4);
+    display: flex;
+    gap: var(--padding-1); /* Space between icons */
+    margin-bottom: var(--padding-2);
+  }
+  
+  .social-media-icons i {
+    color: white;
+    font-size: 1.5rem; /* Adjust as needed */
+  }
+  .social-media-icons i:hover {
+    color: aqua;
+  }
+
+  .footer-right h2, .footer-right p {
+    color: white;
+    margin: 0 0 var(--padding-1) 0;
+  }
+  
+  .footer-right p {
+    font-size: var(--font-size-body);
+  }
+
+  .footer-subscribe-btn {
+    background-color: var(--color-primary-pink);
+    color: var(--color-neutral-very-pale-blue);
+  }
+
+.text-overlay-2 {
+    color: var(--color-neutral-very-pale-blue);
+    font-weight: var(--font-weight-body-bold);
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.footer-subscribe-btn {
+padding: var(--padding);
+border-radius: 10%;
+}
+
+.footer-subscribe-btn:hover {
+    cursor:pointer;
+    color: var(--color-neutral-very-pale-blue);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    
+}
+
+/* media querys */
+@media (min-width: 375px) {
+
+}
+
+
+
+
+
+
+
